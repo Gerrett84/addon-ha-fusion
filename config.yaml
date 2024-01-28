@@ -38,6 +38,7 @@ ports:
 map:
   - ssl
 options:
+  hass_url: null
   ssl: true
   certfile: fullchain.pem
   keyfile: privkey.pem
@@ -45,6 +46,7 @@ schema:
   ssl: bool
   certfile: str
   keyfile: str
+  hass_url: str
   
 # docker hub
 image: matt8707/addon-ha-fusion-{arch}
