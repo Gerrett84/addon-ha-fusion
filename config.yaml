@@ -34,18 +34,11 @@ hassio_api: true
 ports:
   8099/tcp: null
   
-# enable or disable ssl
-map:
-  - ssl
 options:
   hass_url: null
-  ssl: true
-  certfile: fullchain.pem
-  keyfile: privkey.pem
+  hassUrl: null
 schema:
-  ssl: bool
-  certfile: str
-  keyfile: str
+  hassUrl: str
   hass_url: str
   
 # docker hub
